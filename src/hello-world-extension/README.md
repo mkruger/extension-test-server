@@ -36,7 +36,9 @@ To enable HTTPS for this server:
 
 1. Place the `hello-world-extension.crx` file in this directory
 2. Configure your Chrome extension to point to the update manifest URL:
-   - Update manifest URL: `https://YOUR_SERVER_DOMAIN/hello-world-extension/update.xml`
+   - Add the `update_url` key to your extension's `manifest.json` file
+   - Set it to: `https://YOUR_SERVER_DOMAIN/hello-world-extension/update.xml`
+   - Example: `"update_url": "https://example.com/hello-world-extension/update.xml"`
 3. Chrome will automatically check this URL for updates based on the manifest
 
 ## Testing
